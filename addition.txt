@@ -1,0 +1,14 @@
+Turing Machine(
+start state:Q0
+transitions:[
+	0 {Q0} -> x {Q1} R
+	c {Q0} -> _ {halt} R
+	0 {Q1} -> 0 {Q1} R
+	c {Q1} -> c {Q2} R
+	0 {Q2} -> 0 {Q2} R
+	_ {Q2} -> 0 {Q3} L
+	0 {Q3} -> 0 {Q3} L
+    c {Q3} -> c {Q4} L
+    0 {Q4} -> 0 {Q4} L
+    x {Q4} -> x {Q0} R
+])

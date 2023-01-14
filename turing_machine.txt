@@ -1,0 +1,12 @@
+Turing Machine(
+start state:A
+transitions:[
+	0 {C} -> 0 {C} L
+	y {C} -> y {C} L
+	x {C} -> x {A} R
+	0 {A} -> x {B} R
+	y {A} -> y {halt} S
+	0 {B} -> 0 {B} R
+	y {B} -> y {B} R
+	1 {B} -> y {C} L
+])

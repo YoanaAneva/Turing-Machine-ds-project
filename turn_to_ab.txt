@@ -1,0 +1,7 @@
+Turing Machine(
+start state:Q0
+transitions:[
+	x {Q0} -> a {Q0} R
+	y {Q0} -> b {Q0} R
+	_ {Q0} -> _ {halt} S
+])

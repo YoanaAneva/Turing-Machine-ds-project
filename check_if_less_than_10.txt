@@ -1,0 +1,24 @@
+Turing Machine(
+start state:first digit
+transitions:[
+	1 {return second time} -> 1 {Reject} S
+	0 {return second time} -> 0 {return third time} L
+	1 {third digit} -> 1 {forth digit} R
+	0 {third digit} -> 0 {forth digit} R
+	_ {third digit} -> _ {Accept} S
+	0 {return} -> 0 {return second time} L
+	1 {return} -> 1 {return second time} L
+	1 {forth digit} -> 1 {fifth digit} R
+	0 {forth digit} -> 0 {fifth digit} R
+	_ {forth digit} -> _ {Accept} S
+	1 {return third time} -> 1 {Reject} S
+	0 {return third time} -> 0 {Accept} S
+	1 {second digit} -> 1 {third digit} R
+	0 {second digit} -> 0 {third digit} R
+	_ {second digit} -> _ {Accept} S
+	1 {first digit} -> 1 {second digit} R
+	0 {first digit} -> 0 {Accept} S
+	1 {fifth digit} -> 1 {Reject} S
+	0 {fifth digit} -> 0 {Reject} S
+	_ {fifth digit} -> _ {return} L
+])
